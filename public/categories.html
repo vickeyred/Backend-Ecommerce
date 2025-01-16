@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Categories</h1>
+        <button id="view-all-products" class="btn btn-primary mb-3">View All Products</button>
+        <p id="error-message" class="text-danger"></p>
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Date Created</th>
+                </tr>
+            </thead>
+            <tbody id="categories-table-body">
+                <!-- Categories will be dynamically inserted here -->
+            </tbody>
+        </table>
+        <nav>
+            <ul class="pagination justify-content-center" id="pagination-controls">
+                <!-- Pagination buttons will be dynamically inserted here -->
+            </ul>
+        </nav>
+    </div>
+    <script src="js/categories.js"></script>
+</body>
+</html>

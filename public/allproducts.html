@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+    <h1>All Products</h1>
+    <button id="view-categories" class="btn btn-primary mb-3">View All Categories</button>
+    <button id="toggle-filters" class="btn btn-secondary mb-3">Toggle Filters</button>
+    <div>
+        <input type="text" id="search" class="form-control mb-2" placeholder="Search by Product Name">
+        <button id="search-btn" class="btn btn-success mb-3">Apply Search</button>
+    </div>
+    <div id="spellcheck-suggestions" style="display:none;">
+        <p>Did you mean:</p>
+        <!-- Suggestions will be listed here -->
+    </div>
+    <div id="filterDiv" class="filters mb-3" style="display: none;">
+        
+        <!-- Filter Fields -->
+        <input type="number" id="minPrice" class="form-control mb-2" placeholder="Min MRP">
+        <input type="number" id="maxPrice" class="form-control mb-2" placeholder="Max MRP">
+        <input type="number" id="minItems" class="form-control mb-2" placeholder="Min Items">
+        <input type="number" id="maxItems" class="form-control mb-2" placeholder="Max Items">
+        <input type="number" id="minDiscount" class="form-control mb-2" placeholder="Min Discount">
+        <input type="number" id="maxDiscount" class="form-control mb-2" placeholder="Max Discount">
+        
+        <div id="categories-checkboxes">
+            <!-- Checkboxes for categories will be dynamically inserted here -->
+        </div>
+        
+        <button id="apply-filters" class="btn btn-primary">Apply Filters</button>
+    </div>
+    
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>MRP</th>
+                <th>Discount Price</th>
+                <th>No of Items</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody id="products-table-body">
+            <!-- Products will be dynamically inserted here -->
+        </tbody>
+    </table>
+    
+    <nav>
+        <ul class="pagination justify-content-center" id="pagination-controls">
+            <!-- Pagination buttons will be dynamically inserted here -->
+        </ul>
+    </nav>
+    </div>
+
+    <script src="js/allproducts.js"></script>
+</body>
+</html>

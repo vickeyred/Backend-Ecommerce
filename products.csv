@@ -1,0 +1,20 @@
+P_id,P_name,C_id,no_of_items,MRP,discount_price
+1,Smartphone,1,50,699.99,649.99
+2,Laptop,1,20,999.99,949.99
+3,T-Shirt,2,100,19.99,14.99
+4,"Washing Machine",3,10,499.99,459.99
+5,Cookbook,4,200,29.99,24.99
+6,Dumbbells,5,30,39.99,34.99
+7,"Action Figure",6,40,15.99,12.99
+8,Shampoo,7,60,9.99,8.49
+9,"Soccer Ball",8,25,25.99,22.99
+10,"Car Air Freshener",9,50,5.99,4.99
+11,"Garden Shovel",10,15,12.99,10.99
+12,Lenovo,1,50,70000.99,69000.98
+13,"Dell Laptop",1,30,80000.99,77000.99
+14,"HP Desktop",1,20,50000.5,48000.45
+15,"Apple MacBook Air",1,15,120000.0,115000.0
+16,"Samsung Smart TV",1,25,55000.75,53000.5
+17,"Sony Headphones",1,100,5000.99,4500.49
+18,"LG Refrigerator",1,10,65000.0,63000.0
+19,"Bose Soundbar",1,18,40000.49,38000.99
