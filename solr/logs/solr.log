@@ -97,3 +97,6 @@
 2025-01-17 07:01:46.653 INFO  (qtp1212191909-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
 2025-01-17 07:02:16.695 INFO  (qtp1212191909-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
 2025-01-17 07:02:46.735 INFO  (qtp1212191909-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 07:03:16.771 INFO  (qtp1212191909-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 07:03:46.816 INFO  (qtp1212191909-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 07:04:16.853 INFO  (qtp1212191909-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
