@@ -9,6 +9,7 @@ const allProductsRoutes = require('./routes/allproducts');
 const productRoutes = require('./routes/products');
 const authenticateToken = require('./middleware/auth');
 const cookieParser = require('cookie-parser');
+const cors = require('cors'); // Import the CORS middleware
 
 dotenv.config();
 
@@ -16,6 +17,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
+app.use(cors({ origin: 'http://localhost:3000', credentials: true })); // Enable CORS with your frontend's origin
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
@@ -23,9 +25,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.use('/auth', authRoutes);
-app.use('/categories', authenticateToken, categoryRoutes); 
-app.use('/allproducts', authenticateToken, allProductsRoutes); 
-app.use('/products', authenticateToken, productRoutes); 
+app.use('/categories', authenticateToken, categoryRoutes);
+app.use('/allproducts', authenticateToken, allProductsRoutes);
+app.use('/products', authenticateToken, productRoutes);
 
 // Public Routes
 app.get('/', (req, res) => {
