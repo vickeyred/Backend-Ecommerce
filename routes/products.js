@@ -23,7 +23,7 @@ router.get('/', authenticateToken, async (req, res) => {
 
     if (useSolr === 'true') {
         try {
-            const solrBaseUrl = 'http://localhost:8983/solr/products/select';
+            const solrBaseUrl = process.env.SOLR_URL || 'http://localhost:8983/solr/products/select';
             let productName = search.trim();
             let dynamicMinPrice = null;
             let dynamicMaxPrice = null;

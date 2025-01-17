@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch Categories
     async function fetchCategories() {
         try {
-            const response = await fetch('/allproducts/categories');
+            const response = await fetch(`http://localhost:3000/allproducts/categories`);
             const data = await response.json();
             
             categoriesCheckboxesDiv.innerHTML = '';
@@ -74,7 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         try {
-            const response = await fetch(`/allproducts?${queryParams.toString()}`);
+            // Update API URL to fetch data from backend using service name in Docker
+            const response = await fetch(`http://localhost:3000/allproducts?${queryParams.toString()}`);
             const data = await response.json();
             const { products, pagination, spellcheck } = data;
 

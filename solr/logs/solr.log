@@ -1,0 +1,99 @@
+2025-01-17 06:41:45.637 INFO  (main) [] o.e.j.s.Server jetty-10.0.15; built: 2023-04-11T17:25:14.480Z; git: 68017dbd00236bb7e187330d7585a059610f661d; jvm 17.0.10+7
+2025-01-17 06:41:45.911 WARN  (main) [] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
+2025-01-17 06:41:45.935 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2025-01-17 06:41:45.942 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.3.0
+2025-01-17 06:41:45.942 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2025-01-17 06:41:45.942 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /opt/solr-9.3.0
+2025-01-17 06:41:45.942 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2025-01-17T06:41:45.942346017Z
+2025-01-17 06:41:45.946 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: /var/solr/logs/jvm_crash_12.log
+2025-01-17 06:41:45.963 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: /var/solr/data (source: system property: solr.solr.home)
+2025-01-17 06:41:45.980 INFO  (main) [] o.a.s.c.SolrXmlConfig solr.xml not found in SOLR_HOME, using built-in default
+2025-01-17 06:41:45.981 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from /opt/solr-9.3.0/server/solr/solr.xml
+2025-01-17 06:41:46.017 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/opt/solr-9.3.0/lib]
+2025-01-17 06:41:46.887 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2025-01-17 06:41:46.889 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2025-01-17 06:41:47.034 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /var/solr/data
+2025-01-17 06:41:47.034 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [products]
+2025-01-17 06:41:47.065 INFO  (coreLoadExecutor-10-thread-1) [ x:products] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.4
+2025-01-17 06:41:47.095 WARN  (coreLoadExecutor-10-thread-1) [ x:products] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2025-01-17 06:41:47.166 INFO  (coreLoadExecutor-10-thread-1) [ x:products] o.a.s.s.IndexSchema Schema name=default-config
+2025-01-17 06:41:47.267 WARN  (coreLoadExecutor-10-thread-1) [ x:products] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2025-01-17 06:41:47.267 WARN  (coreLoadExecutor-10-thread-1) [ x:products] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2025-01-17 06:41:47.267 WARN  (coreLoadExecutor-10-thread-1) [ x:products] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2025-01-17 06:41:47.267 WARN  (coreLoadExecutor-10-thread-1) [ x:products] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2025-01-17 06:41:47.267 WARN  (coreLoadExecutor-10-thread-1) [ x:products] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2025-01-17 06:41:47.421 INFO  (coreLoadExecutor-10-thread-1) [ x:products] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2025-01-17 06:41:47.492 INFO  (coreLoadExecutor-10-thread-1) [ x:products] o.a.s.c.CoreContainer Creating SolrCore 'products' using configuration from instancedir /var/solr/data/products, trusted=true
+2025-01-17 06:41:47.515 INFO  (main) [] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2025-01-17 06:41:47.530 INFO  (coreLoadExecutor-10-thread-1) [ x:products] o.a.s.c.SolrCore Opening new SolrCore at [/var/solr/data/products], dataDir=[/var/solr/data/products/data/]
+2025-01-17 06:41:47.651 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@46ab18da{solr-jetty-context.xml,/solr,file:///opt/solr-9.3.0/server/solr-webapp/webapp/,AVAILABLE}{/opt/solr-9.3.0/server/solr-webapp/webapp}
+2025-01-17 06:41:47.661 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /var/solr/logs/2025_01_17.request.log
+2025-01-17 06:41:47.665 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@40f1be1b{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2025-01-17 06:41:47.667 INFO  (main) [] o.e.j.s.Server Started Server@773cbf4f{STARTING}[10.0.15,sto=0] @3259ms
+2025-01-17 06:41:47.923 INFO  (coreLoadExecutor-10-thread-1) [ x:products] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2025-01-17 06:41:47.941 INFO  (coreLoadExecutor-10-thread-1) [ x:products] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-01-17 06:41:47.941 INFO  (coreLoadExecutor-10-thread-1) [ x:products] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-01-17 06:41:47.959 INFO  (coreLoadExecutor-10-thread-1) [ x:products] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2025-01-17 06:41:47.960 INFO  (coreLoadExecutor-10-thread-1) [ x:products] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2025-01-17 06:41:48.082 INFO  (coreLoadExecutor-10-thread-1) [ x:products] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/solr/data/products/conf
+2025-01-17 06:41:48.093 INFO  (coreLoadExecutor-10-thread-1) [ x:products] o.a.s.s.DirectSolrSpellChecker init: {maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, accuracy=0.5, maxQueryFrequency=0.01, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
+2025-01-17 06:41:48.099 INFO  (coreLoadExecutor-10-thread-1) [ x:products] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2025-01-17 06:41:48.109 INFO  (searcherExecutor-12-thread-1-processing-products) [ x:products] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-01-17 06:41:48.109 INFO  (searcherExecutor-12-thread-1-processing-products) [ x:products] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-01-17 06:41:48.114 INFO  (searcherExecutor-12-thread-1-processing-products) [ x:products] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2025-01-17 06:41:52.011 INFO  (qtp1212191909-25) [ x:products] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&qf=P_name^3+MRP^2+discount_price^2+no_of_items^1&fl=P_id,P_name,MRP,discount_price,no_of_items,C_id&pf=P_name^5&start=0&fq=MRP:[0+TO+1000000]+AND+no_of_items:[0+TO+1000000]+AND+discount_price:[0+TO+1000000]+AND+C_id:1&rows=5&wt=json} hits=10 status=0 QTime=51
+2025-01-17 06:41:54.199 INFO  (qtp1212191909-19) [ x:products] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&qf=P_name^3+MRP^2+discount_price^2+no_of_items^1&fl=P_id,P_name,MRP,discount_price,no_of_items,C_id&pf=P_name^5&start=0&fq=MRP:[0+TO+999999]+AND+no_of_items:[0+TO+999999]+AND+discount_price:[0+TO+999999]&rows=10&wt=json} hits=19 status=0 QTime=4
+2025-01-17 06:42:00.742 INFO  (qtp1212191909-21) [ x:products] o.a.s.c.S.Request webapp=/solr path=/select params={q=P_name:laptop&qf=P_name^3+MRP^2+discount_price^2+no_of_items^1&fl=P_id,P_name,MRP,discount_price,no_of_items,C_id&pf=P_name^5&start=0&fq=MRP:[0+TO+999999]+AND+no_of_items:[0+TO+999999]+AND+discount_price:[0+TO+999999]&rows=10&wt=json} hits=2 status=0 QTime=14
+2025-01-17 06:42:05.082 INFO  (qtp1212191909-18) [ x:products] o.a.s.c.S.Request webapp=/solr path=/select params={q=P_name:laptop&qf=P_name^3+MRP^2+discount_price^2+no_of_items^1&fl=P_id,P_name,MRP,discount_price,no_of_items,C_id&pf=P_name^5&start=0&fq=MRP:[2000+TO+999999]+AND+no_of_items:[0+TO+999999]+AND+discount_price:[0+TO+999999]&rows=10&wt=json} hits=1 status=0 QTime=2
+2025-01-17 06:42:14.326 INFO  (qtp1212191909-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=5
+2025-01-17 06:42:31.795 INFO  (qtp1212191909-26) [ x:products] o.a.s.c.S.Request webapp=/solr path=/select params={q=P_name:laptop&qf=P_name^3+MRP^2+discount_price^2+no_of_items^1&fl=P_id,P_name,MRP,discount_price,no_of_items,C_id&pf=P_name^5&start=0&fq=MRP:[2000+TO+2000]+AND+no_of_items:[0+TO+999999]+AND+discount_price:[0+TO+999999]&rows=10&wt=json} hits=0 status=0 QTime=3
+2025-01-17 06:42:39.703 INFO  (qtp1212191909-25) [ x:products] o.a.s.c.S.Request webapp=/solr path=/select params={q=P_name:laptop&qf=P_name^3+MRP^2+discount_price^2+no_of_items^1&fl=P_id,P_name,MRP,discount_price,no_of_items,C_id&pf=P_name^5&start=0&fq=MRP:[0+TO+2000]+AND+no_of_items:[0+TO+999999]+AND+discount_price:[0+TO+999999]&rows=10&wt=json} hits=1 status=0 QTime=1
+2025-01-17 06:42:44.167 INFO  (qtp1212191909-19) [ x:products] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&qf=P_name^3+MRP^2+discount_price^2+no_of_items^1&fl=P_id,P_name,MRP,discount_price,no_of_items,C_id&pf=P_name^5&start=0&fq=MRP:[0+TO+2000]+AND+no_of_items:[0+TO+999999]+AND+discount_price:[0+TO+999999]&rows=10&wt=json} hits=11 status=0 QTime=1
+2025-01-17 06:42:44.368 INFO  (qtp1212191909-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=5
+2025-01-17 06:43:14.414 INFO  (qtp1212191909-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=5
+2025-01-17 06:43:44.460 INFO  (qtp1212191909-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=3
+2025-01-17 06:44:14.505 INFO  (qtp1212191909-19) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=4
+2025-01-17 06:44:44.533 INFO  (qtp1212191909-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=3
+2025-01-17 06:45:14.568 INFO  (qtp1212191909-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 06:45:44.614 INFO  (qtp1212191909-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=5
+2025-01-17 06:46:14.649 INFO  (qtp1212191909-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=3
+2025-01-17 06:46:29.361 INFO  (qtp1212191909-19) [ x:products] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&qf=P_name^3+MRP^2+discount_price^2+no_of_items^1&fl=P_id,P_name,MRP,discount_price,no_of_items,C_id&pf=P_name^5&start=0&fq=MRP:[0+TO+999999]+AND+no_of_items:[0+TO+999999]+AND+discount_price:[0+TO+999999]&rows=10&wt=json} hits=19 status=0 QTime=1
+2025-01-17 06:46:34.053 INFO  (qtp1212191909-24) [ x:products] o.a.s.c.S.Request webapp=/solr path=/select params={q=P_name:laptop&qf=P_name^3+MRP^2+discount_price^2+no_of_items^1&fl=P_id,P_name,MRP,discount_price,no_of_items,C_id&pf=P_name^5&start=0&fq=MRP:[0+TO+999999]+AND+no_of_items:[0+TO+999999]+AND+discount_price:[0+TO+999999]&rows=10&wt=json} hits=2 status=0 QTime=1
+2025-01-17 06:46:40.516 INFO  (qtp1212191909-20) [ x:products] o.a.s.c.S.Request webapp=/solr path=/select params={q=P_name:laptop&qf=P_name^3+MRP^2+discount_price^2+no_of_items^1&fl=P_id,P_name,MRP,discount_price,no_of_items,C_id&pf=P_name^5&start=0&fq=MRP:[2000+TO+999999]+AND+no_of_items:[0+TO+999999]+AND+discount_price:[0+TO+999999]&rows=10&wt=json} hits=1 status=0 QTime=0
+2025-01-17 06:46:44.684 INFO  (qtp1212191909-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 06:47:14.729 INFO  (qtp1212191909-19) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=3
+2025-01-17 06:47:44.769 INFO  (qtp1212191909-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 06:48:14.810 INFO  (qtp1212191909-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 06:48:44.845 INFO  (qtp1212191909-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=3
+2025-01-17 06:49:14.884 INFO  (qtp1212191909-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 06:49:44.918 INFO  (qtp1212191909-19) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 06:50:14.960 INFO  (qtp1212191909-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=3
+2025-01-17 06:50:45.760 INFO  (qtp1212191909-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 06:51:15.799 INFO  (qtp1212191909-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 06:51:45.839 INFO  (qtp1212191909-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 06:52:15.895 INFO  (qtp1212191909-19) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=3
+2025-01-17 06:52:45.952 INFO  (qtp1212191909-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 06:53:16.006 INFO  (qtp1212191909-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=3
+2025-01-17 06:53:46.051 INFO  (qtp1212191909-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 06:54:16.088 INFO  (qtp1212191909-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 06:54:46.127 INFO  (qtp1212191909-19) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 06:55:16.169 INFO  (qtp1212191909-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=4
+2025-01-17 06:55:46.204 INFO  (qtp1212191909-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 06:56:16.245 INFO  (qtp1212191909-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 06:56:46.283 INFO  (qtp1212191909-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 06:57:16.311 INFO  (qtp1212191909-19) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 06:57:46.352 INFO  (qtp1212191909-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 06:58:16.387 INFO  (qtp1212191909-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=3
+2025-01-17 06:58:46.427 INFO  (qtp1212191909-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=3
+2025-01-17 06:59:16.467 INFO  (qtp1212191909-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=4
+2025-01-17 06:59:46.508 INFO  (qtp1212191909-19) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 07:00:04.236 INFO  (qtp1212191909-19) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1737097204189} status=0 QTime=0
+2025-01-17 07:00:04.240 INFO  (qtp1212191909-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1737097204189} status=0 QTime=4
+2025-01-17 07:00:04.291 INFO  (qtp1212191909-25) [ x:products] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1737097204222} status=0 QTime=1
+2025-01-17 07:00:04.344 INFO  (qtp1212191909-26) [ x:products] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1737097204222} hits=19 status=0 QTime=0
+2025-01-17 07:00:16.546 INFO  (qtp1212191909-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 07:00:46.584 INFO  (qtp1212191909-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=3
+2025-01-17 07:01:16.620 INFO  (qtp1212191909-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 07:01:46.653 INFO  (qtp1212191909-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 07:02:16.695 INFO  (qtp1212191909-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2
+2025-01-17 07:02:46.735 INFO  (qtp1212191909-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={} status=0 QTime=2

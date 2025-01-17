@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const maxDiscount = parseInt(maxDiscountInput.value) || 1000000;
 
         try {
-            // Pass the categoryId if it exists in the URL
-            const response = await fetch(`/products?page=${page}&pageSize=${pageSize}&categoryId=${categoryId}&search=${search}&minPrice=${minPrice}&maxPrice=${maxPrice}&minItems=${minItems}&maxItems=${maxItems}&minDiscount=${minDiscount}&maxDiscount=${maxDiscount}`);
+            // Modify the URL to point to the backend service in Docker using `app:3000`
+            const response = await fetch(`http://localhost:3000/products?page=${page}&pageSize=${pageSize}&categoryId=${categoryId}&search=${search}&minPrice=${minPrice}&maxPrice=${maxPrice}&minItems=${minItems}&maxItems=${maxItems}&minDiscount=${minDiscount}&maxDiscount=${maxDiscount}`);
 
             if (!response.ok) throw new Error('Failed to fetch products');
 
